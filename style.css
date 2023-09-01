@@ -12,12 +12,10 @@ body {
 }
 
 .left {
-flex: 0.5;
 float: left;
 }
 
-.right {
-  flex:0.5;
+.right {  
   float: right;
 }
 
@@ -29,10 +27,9 @@ float: left;
 }
 
 .card {
-  width: 600px;
- margin: 20px;
+  width: 45%;
  margin-left: 0px;
- display: inline-block;
+
 }
 
 .card-text {
@@ -48,11 +45,11 @@ float: left;
   display: inline-block;
   position: relative;
   top: 40px;
-  font-size: 1.2rem;
+  font-size: 1.201rem;
 }
 
 span {
-  color: darkblue;
+  color: midnightblue;
 }
 
 h1 {
@@ -70,4 +67,22 @@ footer {
 
 .logo {
   width: 200px;
+}
+
+@media (max-width: 600px){
+.card {
+  display: block;
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: justify;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
 }
